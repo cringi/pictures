@@ -38,11 +38,18 @@ public class PictureTester {
         beach.explore();
     }
 
+    public static void testMirrorRightLeft() {
+        Picture beach = new Picture("beach.jpg");
+        beach.explore();
+        beach.mirrorVerticalRightToLeft();
+        beach.explore();
+    }
+
     /**
      * Method to test mirrorVertical
      */
     public static void testMirrorVertical() {
-        Picture caterpillar = new Picture("caterpillar.jpg");
+        Picture caterpillar = new Picture("beach.jpg");
         caterpillar.explore();
         caterpillar.mirrorVertical();
         caterpillar.explore();
@@ -85,16 +92,18 @@ public class PictureTester {
         // and comment out the ones you don't want
         // to run
 
-        testZeroBlue();
-        testKeepOnlyBlue();
-        testNegate();
-        testGrayscale();
+        //testZeroBlue();
+        //testKeepOnlyBlue();
+        //testNegate();
+        //testGrayscale();
         testMirrorVertical();
-        testMirrorTemple();
+        //testMirrorTemple();
 
-        testCollage();
+        //testCollage();
 
-        testEdgeDetection();
+        //testEdgeDetection();
+
+        testMirrorRightLeft();
 
         /*
         testKeepOnlyRed();
