@@ -79,6 +79,20 @@ public class PictureTester {
         temple.explore();
     }
 
+    public static void testMirrorArms() {
+        Picture snow = new Picture("snowman.jpg");
+        snow.explore();
+        snow.mirrorArms();
+        snow.explore();
+    }
+
+    public static void testMirrorGull() {
+        Picture gull = new Picture("seagull.jpg");
+        gull.explore();
+        gull.mirrorGull();
+        gull.explore();
+    }
+
     /**
      * Method to test the collage method
      */
@@ -111,9 +125,11 @@ public class PictureTester {
         //testNegate();
         //testGrayscale();
         //testMirrorVertical();
-        testMirrorHorizontal();
-        testMirrorHorizontalBotToTop();
+        //testMirrorHorizontal();
+        //testMirrorHorizontalBotToTop();
         //testMirrorTemple();
+        testMirrorArms();
+        testMirrorGull();
 
         //testCollage();
 
